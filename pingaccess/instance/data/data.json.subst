@@ -14,7 +14,7 @@
             "cookieDomain": null
         },
         "adminConfig": {
-            "hostPort": "localhost:9090",
+            "hostPort": "pingaccess:9090",
             "httpProxyId": 0,
             "httpsProxyId": 0
         },
@@ -136,10 +136,10 @@
             {
                 "className": "com.pingidentity.pa.identitymappings.JwtIdentityMapping",
                 "id": 1,
-                "name": "WestJet Identity Map",
+                "name": "Default Identity Map",
                 "configuration": {
-                    "headerName": "X-WestJet-Claims",
-                    "audience": "WestJet",
+                    "headerName": "X-Identity-Claims",
+                    "audience": "PingAccess",
                     "exclusionList": false,
                     "exclusionListAttributes": [],
                     "exclusionListSubject": null,
@@ -216,7 +216,7 @@
             "useProxy": false
         },
         "pingFederateOAuth": {
-            "clientId": "WestJetIntrospect",
+            "clientId": "PingIntrospect",
             "clientSecret": {
                 "encryptedValue": "OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRzh3Zml0Y2t4RDNXNHl2VyJ9..cp-RzzFdDP2yZ1kGmcqu4w.kEFYwWTEQ4CCPQ7Vnm273A.fKbSP-NrU6DvXAkF3Bm95w"
             },
@@ -394,11 +394,11 @@
         "webSessions": [
             {
                 "id": 1,
-                "name": "WestJet Session",
+                "name": "PingAccess Session",
                 "oidcLoginType": "Code",
                 "validateSessionIsAlive": false,
                 "clientCredentials": {
-                    "clientId": "WestJetLogon",
+                    "clientId": "PingAccessWebSession",
                     "clientSecret": {
                         "encryptedValue": "OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRzh3Zml0Y2t4RDNXNHl2VyJ9..wWCbUxVc7Cid1biYMPBeuw.trpMt77IpN4scd_JUm5n5A.iqF6w06pKbzogSi_e7cuYg"
                     }
@@ -415,7 +415,7 @@
                 "idleTimeoutInMinutes": 60,
                 "secureCookie": true,
                 "sameSite": "Disabled",
-                "audience": "WestJet",
+                "audience": "PingAccess",
                 "cookieDomain": "",
                 "cacheUserAttributes": false,
                 "enableRefreshUser": true,
