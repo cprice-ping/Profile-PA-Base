@@ -377,7 +377,7 @@
                 ],
                 "audience": "PingAccessSession",
                 "cookieDomain": "",
-                "cookieType": "Encrypted",
+                "cookieType": "Signed",
                 "httpOnlyCookie": true,
                 "secureCookie": true,
                 "sameSite": "Lax",
