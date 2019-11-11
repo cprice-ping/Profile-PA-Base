@@ -3,6 +3,7 @@ This Server Profile is a baseline of PingAccess -- designed to be used with the 
 ## Deployment
 * Copy the `docker-compose.yaml` and `env_vars` files to a folder
 * Modify the `env_vars` file to match your environment (This should combine the variables needed for *all* components in the Compose stack)
+* If the PA Virtual Host is running on anything **other** than `443`, modify the `ports:` section in `docker-compose.yaml` to reflect the mapping to `:3000`
 * Launch the stack with `docker-compose up -d`
 
 This PA install provides the following:  
